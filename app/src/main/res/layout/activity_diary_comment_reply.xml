@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DiaryCommentReplyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="#2E2E2E"
+        android:orientation="horizontal"
+        android:weightSum="1.4">
+
+        <ImageView
+            android:id="@+id/acivity_diary_comment_reply_back"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/icon_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="0.2"
+            app:srcCompat="@drawable/icon_close" />
+
+        <TextView
+            android:id="@+id/acivity_diary_comment_reply_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="답글"
+            android:textColor="#FCFCFC"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/acivity_diary_comment_reply_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip">
+
+        <EditText
+            android:id="@+id/acivity_diary_comment_reply_edittext"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dip"
+            android:layout_weight="5"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="공감글을 입력하세요"
+            android:inputType="text"
+            android:maxLength="80"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/acivity_diary_comment_reply_attachimage"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/icon_search"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_writer_check_black" />
+
+    </LinearLayout>
+
+</LinearLayout>

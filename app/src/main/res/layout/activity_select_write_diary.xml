@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectWriteDiaryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dip"
+        android:background="#54B6B6B6"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/activity_select_write_diary_back"
+            android:layout_width="@dimen/icon_search"
+            android:layout_height="@dimen/icon_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            app:srcCompat="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="51dip"
+            android:layout_weight="1"
+            android:gravity="center|center_vertical"
+            android:text="일기책 선택하기"
+            android:textSize="24dip" />
+
+        <!--<EditText-->
+        <!--android:id="@+id/activity_search_searchcontent"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:ems="1"-->
+        <!--android:hint="누구의 삶이 궁금한가요?"-->
+        <!--android:inputType="textPersonName" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/activity_search_search"-->
+        <!--android:layout_width="@dimen/icon_search"-->
+        <!--android:layout_height="@dimen/icon_search"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="15dip"-->
+        <!--android:layout_marginRight="15dip"-->
+        <!--app:srcCompat="@drawable/icon_search" />-->
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_select_write_diary_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

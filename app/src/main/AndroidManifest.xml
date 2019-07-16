@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 카메라와 갤러리에 접근할 수 있는 권한 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode">
+        <activity
+            android:name=".CheckActivity"
+            android:theme="@style/AppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WatchDiaryHiddenActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".WriteDiaryEditActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".FindFriendActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".CommentReplyEditActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".DiaryCommentReplyActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".DiaryBookEditActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".SelectWriteDiaryActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".CommentEditActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".SearchActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".EmailLoginActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".EmailAccountActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".WriteHiddenDiaryActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".WriteDiaryActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".WatchDiaryActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".CommentActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ProfileChangeActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".NewDiaryBookActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppThemeNoActionBar">
+
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeNoActionBar" /> <!-- 사진 촬영을 위한 provider -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.myapplication.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

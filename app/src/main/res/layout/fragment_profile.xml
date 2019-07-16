@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#fff0f0f0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="나의 세줄일기"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/fragment_profile_sign_out"
+                android:layout_width="80dip"
+                android:layout_height="match_parent"
+                android:text="탈퇴하기"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="하루를 돌아보며 나의 삶을 기억합니다" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="9"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/fragment_profile_profileimage"
+                style="@style/ProfileImage"
+                android:layout_weight="5"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/pic_user_profile" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical"
+                android:paddingLeft="14dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fragment_profile_textview_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLength="10"
+                        android:text="두"
+                        android:textSize="18dip" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="72dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=" 세줄작가"
+                        android:textSize="18dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fragment_profile_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="안녕하세요? \n세줄일기를 쓰고 있는 세줄작가입니다.\n제 삶의 이야기 책들을 만나보세요."
+                    android:textSize="13dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_profile_change"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="프로필 수정" />
+
+                    <Button
+                        android:id="@+id/activity_profile_logout"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="로그아웃" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="혼자쓰는 일기"
+                    android:textSize="16dip" />
+
+                <LinearLayout
+                    android:id="@+id/fragment_profile_make_alone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="60dip"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/icon_new_diary" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="새 일기책 작성하기" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="같이 쓰는 일기"
+                    android:textSize="16dip" />
+
+                <LinearLayout
+                    android:id="@+id/fragment_profile_make_together"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="60dip"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/icon_new_diary" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="새 일기책 작성하기" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_profile_solodiary_recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_profile_duodiary_recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>

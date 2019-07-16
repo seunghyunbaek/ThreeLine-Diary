@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_activity_comment_userimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic_user_profile" />
+
+    <TextView
+        android:id="@+id/item_activity_comment_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="이름"
+        app:layout_constraintStart_toEndOf="@+id/item_activity_comment_userimage"
+        app:layout_constraintTop_toTopOf="@+id/item_activity_comment_userimage" />
+
+    <TextView
+        android:id="@+id/item_activity_comment_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="테스트 공감글입니다"
+        app:layout_constraintStart_toEndOf="@id/item_activity_comment_userimage"
+        app:layout_constraintTop_toBottomOf="@+id/item_activity_comment_username" />
+
+    <TextView
+        android:id="@+id/item_activity_comment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="2019.05.03"
+        app:layout_constraintStart_toEndOf="@id/item_activity_comment_userimage"
+        app:layout_constraintTop_toBottomOf="@id/item_activity_comment_text" />
+
+    <TextView
+        android:id="@+id/iteam_activity_comment_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:text="답글쓰기"
+        app:layout_constraintStart_toEndOf="@id/item_activity_comment_date"
+        app:layout_constraintTop_toTopOf="@id/item_activity_comment_date" />
+
+    <TextView
+        android:id="@+id/item_activity_comment_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:text="좋아요"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@id/iteam_activity_comment_reply"
+        app:layout_constraintTop_toTopOf="@id/item_activity_comment_date" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmailAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="#F7F7F7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/activity_emaillogin_back"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/icon_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="0.2"
+            app:srcCompat="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="로그인"
+            android:textColor="@android:color/black"
+            android:textSize="18dip" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:layout_weight="0.2"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:srcCompat="@drawable/login_pencil" />
+
+    <EditText
+        android:id="@+id/activity_email_login_emailEdit"
+        style="@style/EmailLoginView"
+        android:layout_height="60dip"
+        android:layout_marginTop="30dip"
+        android:layout_weight="0"
+        android:ems="10"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/activity_email_login_passwordEdit"
+        style="@style/EmailLoginView"
+        android:layout_height="60dip"
+        android:layout_weight="0"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/activity_emaillogin_account"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="20dip"
+            android:layout_weight="1"
+            android:background="#63767C"
+            android:text="계정 만들기"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/activity_emaillogin_complete_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="20dip"
+            android:layout_weight="1"
+            android:background="#63767C"
+            android:text="로그인"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/activity_email_login_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="자동 로그인" />
+
+    <TextView
+        android:id="@+id/textView38"
+        style="@style/EmailLoginView"
+        android:layout_height="60dip"
+        android:text="개인정보처리방침 및 이용약관을 읽고, 동의합니다"
+        android:visibility="invisible" />
+
+</LinearLayout>

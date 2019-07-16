@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="WhiteAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#AC9E9E</item>
+        <item name="actionBarSize">70dip</item>
+        <!--<item name="android:textColorSecondary">#000000</item>-->
+    </style>
+
+    <style name="TabTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#56a623</item> <!-- 배경 -->
+        <item name="android:textColorPrimary">@android:color/white</item>       <!-- 탭바 선택된 텍스트 -->
+        <item name="android:textColorSecondary">@android:color/black</item>     <!-- 탭바 텍스트 -->
+        <item name="colorAccent">@android:color/white</item>                    <!-- 하단 움직이는 바 색-->
+    </style>
+
+    <style name="DiaryImageVIew">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:adjustViewBounds">true</item>
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <item name="android:layout_width">@dimen/image_width</item>
+        <item name="android:maxWidth">@dimen/image_width</item>
+        <item name="android:maxHeight">@dimen/image_height</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="DiaryLinearLayout">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:weightSum">3</item>
+        <item name="android:layout_margin">2dip</item>
+    </style>
+
+    <style name="DiaryBookLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:weightSum">3</item>
+        <item name="android:layout_margin">2dip</item>
+    </style>
+
+    <style name="DiaryBookImageVIew">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:adjustViewBounds">true</item>
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <item name="android:layout_width">@dimen/image_diary_book_width</item>
+        <item name="android:maxWidth">@dimen/image_diary_book_width</item>
+        <item name="android:maxHeight">@dimen/image_height</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="DiaryTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:background">@color/colorGray</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">10dip</item>
+    </style>
+
+    <style name="DiaryTabLinearLayout"></style>
+
+    <style name="DiaryTabImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ProfileImage">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:cropToPadding">true</item>
+    </style>
+
+    <style name="ProfileTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="WatchDiaryTab">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">50dip</item>
+        <item name="android:layout_marginBottom">6dip</item>
+        <item name="android:layout_marginTop">6dip</item>
+        <item name="android:paddingRight">6dip</item>
+        <item name="android:layout_marginLeft">6dip</item>
+    </style>
+
+    <style name="EmailLoginView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:layout_weight">1.5</item>
+    </style>
+</resources>

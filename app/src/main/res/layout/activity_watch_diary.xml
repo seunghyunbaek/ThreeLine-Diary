@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WatchDiaryActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_watch_diary_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:overScrollMode="never" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#2E2E2E">
+
+        <ImageView
+            android:id="@+id/activity_watchdiary_back"
+            style="@style/WatchDiaryTab"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_back_off" />
+
+        <ImageView
+            android:id="@+id/activity_watchdiary_share"
+            style="@style/WatchDiaryTab"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/activity_watchdiary_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_menu_share" />
+
+        <ImageView
+            android:id="@+id/activity_watchdiary_subscribe"
+            style="@style/WatchDiaryTab"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_watchdiary_share"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_subscribe_diary_off" />
+
+        <TextView
+            android:id="@+id/activity_watachdiary_subscribecount"
+            style="@style/WatchDiaryTab"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_watchdiary_subscribe"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_watachdiary_subscribecount2"
+            style="@style/WatchDiaryTab"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:text="명 구독중"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_watachdiary_subscribecount"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/activity_watchdiary_comment"
+            style="@style/WatchDiaryTab"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_watachdiary_subscribecount2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_comment_off" />
+
+        <TextView
+            android:id="@+id/watchDiaryCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_watchdiary_comment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/activity_watchdiary_like"
+            style="@style/WatchDiaryTab"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/watchDiaryCommentCount"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_like_off" />
+
+        <TextView
+            android:id="@+id/activity_watchdiary_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_watchdiary_like"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/activity_watchdiary_calendar"
+            style="@style/WatchDiaryTab"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/activity_watchdiary_diaryedit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_calendar" />
+
+        <ImageView
+            android:id="@+id/activity_watchdiary_diaryedit"
+            style="@style/WatchDiaryTab"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/activity_watchdiary_list"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_symbol_plus" />
+
+        <ImageView
+            android:id="@+id/activity_watchdiary_list"
+            style="@style/WatchDiaryTab"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_menu_toc" />
+
+        <ImageView
+            android:id="@+id/activity_watchdiary_end"
+            style="@style/WatchDiaryTab"
+            android:rotation="180"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_watchdiary_like_count"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_back_off" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

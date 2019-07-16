@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--메인 다이어리 dimen-->
+    <dimen name="icon_search">36dp</dimen>
+    <dimen name="image_height">220dip</dimen>
+    <dimen name="image_max_height">220dip</dimen>
+    <dimen name="image_width">220dip</dimen>
+    <dimen name="image_max_width">220dip</dimen>
+    <dimen name="image_diary_book_width">200dip</dimen>
+
+
+</resources>

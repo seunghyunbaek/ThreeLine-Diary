@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context=".ProfileChangeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:background="#F7F7F7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/activity_profilechange_back"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/icon_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="0.2"
+            app:srcCompat="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/activity_comment_title"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="프로필 수정"
+            android:textColor="@android:color/black"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:layout_weight="0.2"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <ImageView
+            android:id="@+id/activity_profilechange_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/pic_user_profile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dip"
+            android:text="편 집"
+            android:textSize="20dip" />
+    </FrameLayout>
+
+    <LinearLayout style="@style/ProfileTextView">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="필 명"
+            android:textSize="18dip" />
+
+        <EditText
+            android:id="@+id/activity_profilechange_edit_name"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10"
+            android:hint="필명(최대12자)"
+            android:inputType="textPersonName"
+            android:maxLength="12"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+    <!--<LinearLayout style="@style/ProfileTextView">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dip"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="키워드"-->
+    <!--android:textSize="18dip" />-->
+
+    <!--<EditText-->
+    <!--android:layout_width="0dip"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="3"-->
+    <!--android:ems="10"-->
+    <!--android:hint="필자를 대표하는 단어(예. 작가, 직장인 등)"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:textSize="14dip" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout style="@style/ProfileTextView">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="소 개"
+            android:textSize="18dip" />
+
+        <EditText
+            android:id="@+id/activity_profilechange_edit_introduce"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10"
+            android:hint="필자에 대해 소개해 주세요.(최대100자)"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:maxLines="3"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_profilechange_button_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="#63767C"
+        android:text="완료"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
