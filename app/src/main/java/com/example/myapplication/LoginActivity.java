@@ -97,7 +97,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
         //로그인 시도할 액티비티에서 유저데이터 요청
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("1003760306941-e2svtn5cditrrpg24jp49sfaa6cius2b.apps.googleusercontent.com")
+                .requestIdToken("requestIDToken")
                 .requestEmail()
                 .build();
 
