@@ -22,5 +22,5 @@
 [세줄일기 데모영상입니다](https://drive.google.com/open?id=1qFyUu6X1LMgzxlpQ8ZyOyfhbhZfU6ZhB)
 
 ### 아쉬운 점 
-* JAVA로 개발하면서 NPE오류, 비동기 처리, 반복된 코드, 개발기간, UI, UX 등 아쉬운 점이 많다. 아쉬운 부분들에 대해서 만들면서 찾아보니 Kotlin, RxJava 등 더 많은 기술의 선택지가 있었고, Activity에 많은 코드가 들어있어 관리가 어려웠다. 다음 애플리케이션을 만들 때에는 MVP, MVVM패턴을 적용해보고 Kotlin으로 개발을 할 예정이다.
+* JAVA로 개발하면서 NPE오류, 비동기 처리, 반복된 코드, 개발기간, UI, UX 등 아쉬운 점이 많다. 아쉬운 부분들에 대해서 만들면서 찾아보니 Kotlin, RxJava 등 더 많은 기술의 선택지가 있었고, Activity에 많은 코드가 들어있어 관리가 어려웠다. 다음 애플리케이션을 만들 때에는 MVP, MVVM패턴을 적용해보고 Kotlin으로 개발을 할 예정이다.  
 [다음 애플리케이션 개발 : Family](https://github.com/seunghyunbaek/Family)
