@@ -57,6 +57,10 @@
 * 일기장 구독
 * 구독한 일기장 모아보기
 
+### 검색하기
+> <p> <img src="/preview/16_search.jpg" width="200px" height="400px"/> </p>
+
+
 ### 데모
 [세줄일기 데모영상입니다](https://drive.google.com/open?id=1qFyUu6X1LMgzxlpQ8ZyOyfhbhZfU6ZhB)
 
