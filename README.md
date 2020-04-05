@@ -38,7 +38,7 @@
 * 공개/비공개 설정
 
 ### 같이쓰는 일기장 만들기
-> <p> <img src="/preview/20_with_write_find_user_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/22_with_write_find_user_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/28_create_diary.jpg" width="200px" height="400px"/> <img src="/preview/23_book_with_friend_ready_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/24_book_positive.jpg" width="200px" height="400px"/> <img src="/preview/25_with_friend_diarybook.jpg" width="200px" height="400px"/>
+> <p> <img src="/preview/20_with_write_find_user_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/22_with_write_find_user_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/28_create_diary.jpg" width="200px" height="400px"/> <br><img src="/preview/23_book_with_friend_ready_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/24_book_positive.jpg" width="200px" height="400px"/> <img src="/preview/25_with_friend_diarybook.jpg" width="200px" height="400px"/>
 * 같이 쓸 친구 검색
 * 같이 쓰는 일기 수락
 
