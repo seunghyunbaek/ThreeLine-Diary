@@ -2,7 +2,12 @@
 19.04 ~ 19.06
 
 ### 소개
-세줄일기라는 애플리케이션은 스토어에 올라와있는 애플리케이션입니다. 출시되어있는 애플리케이션을 가이드라인삼아 만들어나갔습니다.  
+"세줄일기"라는 애플리케이션은 스토어에 올라와있는 애플리케이션입니다.  
+출시되어있는 애플리케이션을 가이드라인삼아 만들어나갔습니다.  
+
+## 사용기술
+* 언어 : Java
+* 라이브러리 : firebase
 
 ## 주요기능
 ### 로그인  
@@ -33,12 +38,12 @@
   * 삭제
 
 ### 혼자쓰는 일기장 만들기
-> <p> <img src="/preview/28_create_diary.jpg" width="200px" height="400px"/> </p>
+> <p> <img src="/preview/28_create_diary_pixlr.jpg" width="200px" height="400px"/> </p>
 * 일기장 표지 사진 설정
 * 공개/비공개 설정
 
 ### 같이쓰는 일기장 만들기
-> <p> <img src="/preview/20_with_write_find_user_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/22_with_write_find_user_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/28_create_diary.jpg" width="200px" height="400px"/> <img src="/preview/23_book_with_friend_ready_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/24_book_positive.jpg" width="200px" height="400px"/> <img src="/preview/25_with_friend_diarybook.jpg" width="200px" height="400px"/>
+> <p> <img src="/preview/20_with_write_find_user_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/22_with_write_find_user_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/28_create_diary_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/23_book_with_friend_ready_pixlr.jpg" width="200px" height="400px"/> <img src="/preview/24_book_positive.jpg" width="200px" height="400px"/> <img src="/preview/25_with_friend_diarybook.jpg" width="200px" height="400px"/>
 * 같이 쓸 친구 검색
 * 같이 쓰는 일기 수락
 
