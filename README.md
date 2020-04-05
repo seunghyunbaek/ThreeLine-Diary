@@ -59,7 +59,7 @@
 
 ### 검색하기
 > <p> <img src="/preview/16_search.jpg" width="200px" height="400px"/> </p>
-
+* 일기장을 검색합니다
 
 ### 데모
 [세줄일기 데모영상입니다](https://drive.google.com/open?id=1qFyUu6X1LMgzxlpQ8ZyOyfhbhZfU6ZhB)
